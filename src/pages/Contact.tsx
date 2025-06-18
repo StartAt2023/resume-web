@@ -95,7 +95,7 @@ const Contact: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <ContactLabel>Email:</ContactLabel>
-              <ContactValue>your.email@example.com</ContactValue>
+              <ContactValue>jamesaudaily2000@gmail.com</ContactValue>
             </ContactItem>
             <ContactItem
               initial={{ x: -50, opacity: 0 }}
@@ -103,7 +103,7 @@ const Contact: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <ContactLabel>LinkedIn:</ContactLabel>
-              <ContactValue>linkedin.com/in/yourprofile</ContactValue>
+              <ContactValue>https://www.linkedin.com/in/xuanhui-wu-4836b2300/</ContactValue>
             </ContactItem>
             <ContactItem
               initial={{ x: -50, opacity: 0 }}
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <ContactLabel>GitHub:</ContactLabel>
-              <ContactValue>github.com/yourusername</ContactValue>
+              <ContactValue>github.com/StartAt2023</ContactValue>
             </ContactItem>
           </ContactInfo>
         </ContactCard>

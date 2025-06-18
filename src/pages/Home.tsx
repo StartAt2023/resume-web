@@ -14,6 +14,38 @@ const Section = styled(motion.section)<{ bgColor: string }>`
   align-items: center;
 `;
 
+const PixelTitle = styled(motion.h1)`
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  line-height: 1.5;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+`;
+
+const PixelSubtitle = styled(motion.h2)`
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  line-height: 1.5;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+`;
+
 const Title = styled(motion.h1)`
   font-size: 3.5rem;
   color: #fff;
@@ -104,6 +136,35 @@ const ProjectCard = styled(motion.a)`
   }
 `;
 
+const Intro = styled(motion.div)`
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem;
+  color: #222;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 1.5rem;
+
+  p {
+    margin-bottom: 1.2rem;
+  }
+
+  strong {
+    color: #3f2b96;
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.2rem 1rem;
+    font-size: 1rem;
+  }
+`;
+
 const Home: React.FC = () => {
   const [activeSection, setActiveSection] = useState('welcome');
 
@@ -150,32 +211,22 @@ const Home: React.FC = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <Title
+        <PixelTitle
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          style={{ 
-            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
-            background: 'linear-gradient(45deg, #fff, #f0f0f0)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
-          }}
         >
           Welcome to James Wu's Resume
-        </Title>
-        <Subtitle
+        </PixelTitle>
+        <PixelSubtitle
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          style={{ 
-            textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)',
-            color: '#fff'
-          }}
         >
           Scroll down to view more content
-        </Subtitle>
+        </PixelSubtitle>
       </Section>
 
       <Section
@@ -192,16 +243,17 @@ const Home: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          James Wu
+          Xuanhui Wu Introduction
         </Title>
-        <Subtitle
+        <Intro
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Full Stack Developer
-        </Subtitle>
+          <p><strong>My name is Xuanhui Wu</strong>, you can call me James. I will graduate in 2025 with a Master of Information Technology from Monash University. During my studies, I systematically learned Java, Python, MySQL, and computer fundamentals, and developed various front-end and back-end projects based on JavaScript for academic purposes. I have a basic understanding of cloud computing and virtualization platforms, and have hands-on project experience with Firebase and AWS. My undergraduate degree was in Accounting at a university in China, and I have passed the first 9 fundamental papers of ACCA, giving me a solid foundation in financial knowledge.</p>
+          <p>Currently, I am seeking IT-related positions such as <strong>front-end development, back-end development, full-stack development, software engineering, or DevOps</strong>.</p>
+        </Intro>
       </Section>
 
       <Section
@@ -232,6 +284,10 @@ const Home: React.FC = () => {
             <p>Master of Information Technology</p>
             <p>Monash University</p>
             <p>2023 - 2025</p>
+            <hr />
+            <p>Bachelor of Accounting</p>
+            <p>Guangdong Polytechnic Normal University</p>
+            <p>2019 - 2023</p>
           </SkillsCard>
           <SkillsCard
             initial={{ x: 50, opacity: 0 }}
@@ -240,7 +296,7 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <h3>Technical Skills</h3>
-            <p>Frontend: React, TypeScript, HTML, CSS</p>
+            <p>Frontend: React, Vue, TypeScript, HTML, CSS</p>
             <p>Backend: Node.js, Python, Java</p>
             <p>Database: MySQL, MongoDB</p>
           </SkillsCard>
