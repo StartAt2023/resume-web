@@ -227,6 +227,30 @@ const Home: React.FC = () => {
         >
           Scroll down to view more content
         </PixelSubtitle>
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          style={{
+            marginTop: '20px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
+          <img
+            src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWtnY2xodTE0MXh3am83N2xueXp2NmpjZGhtd2VxYXdibDNzMzlnbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l1KtXmfi3EnjM5zpK/giphy.gif"
+            alt="Animated GIF"
+            style={{
+              maxWidth: '300px',
+              width: '100%',
+              height: 'auto',
+              borderRadius: '10px',
+              boxShadow: '0 4px 8px rgba(0,0,0,0.3)'
+            }}
+          />
+        </motion.div>
       </Section>
 
       <Section
@@ -245,15 +269,59 @@ const Home: React.FC = () => {
         >
           Xuanhui Wu Introduction
         </Title>
-        <Intro
+        <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          style={{
+            display: 'flex',
+            gap: '40px',
+            alignItems: 'flex-start',
+            justifyContent: 'center',
+            maxWidth: '1200px',
+            margin: '0 auto',
+            flexWrap: 'wrap',
+            padding: '0 20px'
+          }}
         >
-          <p><strong>My name is Xuanhui Wu</strong>, you can call me James. I will graduate in 2025 with a Master of Information Technology from Monash University. During my studies, I systematically learned Java, Python, MySQL, and computer fundamentals, and developed various front-end and back-end projects based on JavaScript for academic purposes. I have a basic understanding of cloud computing and virtualization platforms, and have hands-on project experience with Firebase and AWS. My undergraduate degree was in Accounting at a university in China, and I have passed the first 9 fundamental papers of ACCA, giving me a solid foundation in financial knowledge.</p>
-          <p>Currently, I am seeking IT-related positions such as <strong>front-end development, back-end development, full-stack development, software engineering, or DevOps</strong>.</p>
-        </Intro>
+          <Intro
+            style={{
+              flex: '0 1 auto',
+              maxWidth: '600px',
+              margin: 0
+            }}
+          >
+            <p><strong>My name is Xuanhui Wu</strong>, you can call me James. I will graduate in 2025 with a Master of Information Technology from Monash University. During my studies, I systematically learned Java, Python, MySQL, and computer fundamentals, and developed various front-end and back-end projects based on JavaScript for academic purposes. I have a basic understanding of cloud computing and virtualization platforms, and have hands-on project experience with Firebase and AWS. My undergraduate degree was in Accounting at a university in China, and I have passed the first 9 fundamental papers of ACCA, giving me a solid foundation in financial knowledge.</p>
+            <p>Currently, I am seeking IT-related positions such as <strong>front-end development, back-end development, full-stack development, software engineering, or DevOps</strong>.</p>
+          </Intro>
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            style={{
+              flex: '0 0 auto',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginTop: '20px'
+            }}
+          >
+            <img
+              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2dlOWttZWNzbTJ5b3phMHhheXVlM2JwdW5iM3BzczF6OWw4Znp4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMFZDsj0AKUDYTS/giphy.gif"
+              alt="Introduction GIF"
+              style={{
+                maxWidth: '280px',
+                width: '100%',
+                height: 'auto',
+                borderRadius: '15px',
+                boxShadow: '0 8px 16px rgba(0,0,0,0.3)',
+                border: '3px solid rgba(255,255,255,0.1)'
+              }}
+            />
+          </motion.div>
+        </motion.div>
       </Section>
 
       <Section
@@ -321,7 +389,7 @@ const Home: React.FC = () => {
         </Title>
         <ProjectGrid>
           <ProjectCard
-            href="https://github.com/yourusername/project1"
+            href="https://github.com/StartAt2023/E-commerce-Order-Processing-System"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ y: 50, opacity: 0 }}
@@ -329,8 +397,8 @@ const Home: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3>Project 1</h3>
-            <p>A full-stack web application built with React and Node.js</p>
+            <h3>Project 1 E-Commerce</h3>
+            <p>This is a full-stack e-commerce platform developed with React for the frontend, Node.js for the backend, and MongoDB as the database. It features user authentication, product management, a shopping cart system, and secure checkout functionality.</p>
           </ProjectCard>
           <ProjectCard
             href="https://github.com/yourusername/project2"
