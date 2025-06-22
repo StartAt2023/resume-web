@@ -502,7 +502,7 @@ const Home: React.FC = () => {
         <ProjectGrid>
           <ProjectContainer>
             <ProjectCard
-              href="https://e-commerce-order-processing-system-nine.vercel.app/"
+              href="https://e-commerce-order-processing-system.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ y: 50, opacity: 0 }}
