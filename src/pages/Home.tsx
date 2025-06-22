@@ -510,7 +510,7 @@ const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h3>E-Commerce Platform</h3>
+              <h3>GGym Shopping Platform</h3>
               <h4>Full-Stack Web Application</h4>
               <p>A complete e-commerce solution built with React frontend, Node.js backend, and MongoDB database. Features user authentication, product management, shopping cart, and secure checkout.</p>
             </ProjectCard>
@@ -556,7 +556,7 @@ const Home: React.FC = () => {
           </ProjectContainer>
           <ProjectContainer>
             <ProjectCard
-              href="https://github.com/yourusername/project3"
+              href="https://g-gym-platform.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ y: 50, opacity: 0 }}
@@ -564,12 +564,12 @@ const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <h3>Real-time Chat App</h3>
-              <h4>WebSocket Application</h4>
-              <p>A modern real-time chat application built with WebSocket technology, featuring instant messaging, user presence, and responsive design for seamless communication.</p>
+              <h3>GGym Training Platform</h3>
+              <h4>Full-Stack Web Application</h4>
+              <p>A complete training platform for GGym, including training plans, training records, and training progress tracking. Built with React, Node.js, and MongoDB.</p>
             </ProjectCard>
             <GitHubLink
-              href="https://github.com/yourusername/project3"
+              href="https://github.com/StartAt2023/GGymPlatform"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
