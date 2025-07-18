@@ -511,13 +511,13 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <h3>GGPlatform</h3>
-              <h4>全栈Web应用</h4>
-              <p>GGPlatform 是一个集成了购物与训练管理的全栈平台，包含商品管理、购物车、订单结算、训练计划与记录等功能。前端采用 React，后端基于 Node.js，数据存储使用 MongoDB，支持用户认证和数据可视化。</p>
+              <h4>Full-Stack Web Application</h4>
+              <p>GGPlatform is an integrated full-stack platform for shopping and training management. It features product management, shopping cart, order checkout, training plans, and training record tracking. The frontend is built with React, the backend uses Node.js, and MongoDB is used for data storage. The platform supports user authentication and data visualization.</p>
             </ProjectCard>
           </ProjectContainer>
           <ProjectContainer>
             <ProjectCard
-              href="#"
+              href="https://to-do-list-web-ivory.vercel.app/login"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ y: 50, opacity: 0 }}
@@ -525,9 +525,9 @@ const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <h3>To Do List Web应用</h3>
-              <h4>全栈任务管理平台</h4>
-              <p>基于 React 和 Node.js 的全栈 To Do List 应用，支持账户注册与管理、任务邮件提醒、长短期任务分配等功能。用户可高效管理日常与周期性任务，系统自动发送邮件提醒，提升任务完成率。</p>
+              <h3>To Do List Web Application</h3>
+              <h4>Full-Stack Task Management Platform</h4>
+              <p>A full-stack To Do List application built with React and Node.js. It supports account registration and management, email reminders for tasks, and both long-term and short-term task assignment. Users can efficiently manage daily and recurring tasks, and the system automatically sends email notifications to improve task completion rates.</p>
             </ProjectCard>
           </ProjectContainer>
         </ProjectGrid>
