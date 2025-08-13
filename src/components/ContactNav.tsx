@@ -70,7 +70,22 @@ const ContactNav: React.FC = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          Home
+          Welcome
+        </NavLink>
+        <NavLink
+          to="/introduction"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Introduction
+        </NavLink>
+
+        <NavLink
+          to="/projects"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Projects
         </NavLink>
         <NavLink
           to="/contact"
