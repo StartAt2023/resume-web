@@ -212,7 +212,7 @@ const Projects: React.FC = () => {
       subtitle: "React Admin Panel",
       date: "Oct 2024",
       description: "A comprehensive admin dashboard for e-commerce management built with React and TypeScript. Features include product management, order tracking, customer analytics, and inventory control. The dashboard provides real-time data visualization and responsive design for optimal user experience.",
-      link: "#",
+      link: "https://e-commerce-order-processing-system.vercel.app/",
       isLeft: true
     },
     {
